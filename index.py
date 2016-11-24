@@ -28,9 +28,9 @@ def analysis():
     # save csv in local directory
     with open('csv/upload.csv', 'w') as f:
       writer = csv.writer(f, lineterminator='\n')
-      writer.writerow(csv_lines)
+      writer.writerows(csv.reader(csv_lines, delimiter=",", quotechar='"'))
 
-    # 
+    # analysis
 
     return render_template('index.html')
 
