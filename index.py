@@ -9,7 +9,7 @@ import os
 import numpy as np
 from matplotlib import pyplot as plt
 from scipy import stats
-
+from figure import Figure
 
 app = Flask(__name__)
 
